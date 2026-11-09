@@ -150,6 +150,19 @@ Quy trình nháp hiện tại:
 | Mức can thiệp AI | | |
 | Quyết định | | |
 
+
+| Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
+|---|---|---|
+| Pitch Problem Card | Em đề xuất 3 candidate: #10 — Trích xuất thông tin CCCD và giấy đăng ký kinh doanh; #11 — Trích xuất thông tin hợp đồng; #12 — Tổng hợp yêu cầu từ email khách hàng. | Bổ sung 3 bài toán thuộc lĩnh vực pháp lý để nhóm thảo luận. Candidate #10 được đưa vào shortlist. |
+| Phản biện bài của bạn khác | Em đặt câu hỏi về nguy cơ bỏ sót gian lận khi ưu tiên sai cảnh báo (#1), cách phát hiện lỗi tóm tắt tài liệu (#5) và tiêu chí xác định độ khó bài tập (#9). | Giúp nhóm xem xét các rủi ro và hạn chế của những candidate này. |
+| Nhận phản biện | Em nhận được 3 câu hỏi về hiệu quả tiết kiệm thời gian của OCR (#10), cách xác định đúng ngày hết hạn hợp đồng (#11) và cách xử lý email có yêu cầu thay đổi liên tục (#12). Em đề xuất bổ sung bước kiểm tra thông tin sau OCR, đối chiếu ngữ cảnh hợp đồng và xác định yêu cầu mới nhất trong chuỗi email. | |
+| Gom cluster / cây OST |Em phân tích 3 candidate #10, #11, #12, đối chiếu với các cluster của nhóm và hỗ trợ tổng hợp cây OST, phân biệt Opportunity với Solution. | Nhóm phân 12 candidate thành 3 cluster và xây dựng cây OST gồm Outcome, Opportunity và Solution. |
+| Chọn candidate problem | | Nhóm chọn Candidate #1 — Ưu tiên cảnh báo giao dịch đáng ngờ, đạt 31/35 điểm. |
+| Kiểm chứng / research | | |
+| Quy trình nhóm | | |
+| Problem Statement | | |
+| Mức can thiệp AI | | |
+| Quyết định | | |
 ---
 
 ## 5. Dùng AI
