@@ -62,14 +62,7 @@ Chatbot tư vấn pháp lý tự động: Phạm vi quá rộng, yêu cầu đ�
 
 Quy trình nháp hiện tại:
 ```text
-flowchart LR
-    A[Khách hàng gửi giấy tờ] --> B[Trợ lý tiếp nhận hồ sơ]
-    B --> C[Đọc thông tin]
-    C --> D[Nhập dữ liệu thủ công]
-    D --> E{Thông tin đúng?}
-    E -->|Có| F[Lưu hồ sơ]
-    E -->|Không| G[Chỉnh sửa thông tin]
-    G --> E
+Khách hàng gửi giấy tờ -->Trợ lý tiếp nhận hồ sơ--> Đọc thông tin--> Nhập dữ liệu thủ công-->Thông tin đúng? -->Có [Lưu hồ sơ]-->Không [Chỉnh sửa thông tin]
 ```
 
 ### Problem Card #2
@@ -90,7 +83,6 @@ flowchart LR
 Quy trình nháp hiện tại:
 
 ```text
-flowchart LR
     A[Khách hàng gửi hợp đồng] --> B[Chuyên viên tiếp nhận]
     B --> C[Đọc nội dung hợp đồng]
     C --> D[Tìm thời hạn, giá trị, ngày hết hạn]
@@ -119,7 +111,6 @@ flowchart LR
 Quy trình nháp hiện tại:
 
 ```text
-flowchart LR
     A[Khách hàng gửi email] --> B[Trợ lý mở chuỗi email]
     B --> C[Đọc từng email]
     C --> D[Kiểm tra tài liệu đính kèm]
