@@ -154,16 +154,16 @@ Tổng: 30–45 phút/đề cương.
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: cho TruongDucPhat: “Nếu cảnh báo nhầm quá nhiều, khách hàng có còn tin vào hệ thống không?”; cho HoAnLoc: “Nếu thành viên không cập nhật tiến độ thì hệ thống có giải quyết được vấn đề không?”; cho NguyenMinhNhan: “Nếu hợp đồng có nhiều ngày tháng khác nhau thì làm sao xác định đúng ngày hết hạn?” | Làm rõ rủi ro về độ chính xác của cảnh báo, sự phụ thuộc vào cập nhật của người dùng và cách xác định đúng thông tin từ hợp đồng. |
-| Nhận phản biện | HoAnLoc: “Nếu thông tin trong chat và tài liệu mâu thuẫn nhau thì nên tin nguồn nào?”; TruongDucPhat: “Nếu không có ghi chú hoặc tài liệu buổi học thì AI lấy gì để tổng hợp?”; NguyenMinhNhat: “Độ khó bài tập tùy năng lực mỗi người, vậy dựa vào đâu để phân loại?” | Sửa các phần sau: #1: Ưu tiên tài liệu chính thức đã được thống nhất/phê duyệt; kiểm tra ngày cập nhật và hỏi cấp trên/đồng nghiệp khi mâu thuẫn hoặc cần cập nhật. #2: Tập trung tìm slide, tài liệu, bài tập và thông báo hiện có; dùng ghi chú bạn học làm nguồn bổ trợ, nêu rõ phần thiếu nguồn. #3: Chỉ thống kê tỷ trọng bài trung bình–khó theo nhãn/tiêu chí trong đề cương; để sinh viên tự chọn ưu tiên theo năng lực, không suy đoán điểm số cá nhân. |
-| Gom cluster / cây OST | Phân tích các vấn đề tìm kiếm và tổng hợp từ nhiều nguồn, góp phần xây dừng Opportunity B | Xây dựng được Oppoturnity B cho cây OST |
-| Chọn candidate problem | Tổng hợp bảng chấm điểm của 3 candidate (#1, #5 và #10) theo 7 tiêu chí đã thống nhất, đồng thời kiểm tra lại tổng điểm để đảm bảo tính chính xác và nhất quán. | Giúp nhóm có cơ sở so sánh khách quan giữa 3 candidate, xác định phương án phù hợp nhất và thống nhất lựa chọn Candidate #1 dựa trên kết quả đánh giá. |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Tôi đề xuất 3 candidate: #7 — Tìm lại thông tin từ chat, tài liệu và cuộc họp; #8 — Tổng hợp nội dung bài học bị bỏ lỡ; #9 — Xác định dạng bài cần ưu tiên ôn tập. | Bổ sung 3 tình huống cụ thể để so sánh với các đề xuất khác và thảo luận về tìm kiếm thông tin, học tập, và ưu tiên công việc. |
+| Phản biện bài của bạn khác | Tôi hỏi về ảnh hưởng của cảnh báo nhầm đến niềm tin khách hàng (#3), khả năng theo dõi tiến độ khi thành viên không cập nhật (#6), và cách xác định ngày hết hạn trong hợp đồng (#11). | Giúp nhóm nhận diện rủi ro về độ chính xác, dữ liệu đầu vào và tính khả thi của các candidate. |
+| Nhận phản biện | Tôi nhận câu hỏi về cách xử lý thông tin mâu thuẫn giữa chat và tài liệu (#7), cách tổng hợp bài học khi thiếu ghi chú (#8), và tiêu chí đánh giá độ khó bài tập (#9). | Làm rõ hạn chế về nguồn dữ liệu, tính đầy đủ của thông tin và sự khác biệt giữa nhu cầu của từng người dùng. |
+| Gom cluster / cây OST | Tôi phân nhóm các candidate #7, #8, #9 và xác định các điểm chung về việc tìm kiếm thông tin và ưu tiên công việc. | Góp phần hoàn thiện 3 cluster và cây OST, phân biệt vấn đề của người dùng với giải pháp công nghệ. |
+| Chọn candidate problem | Tôi đánh giá các candidate theo actor, quy trình, mức độ ảnh hưởng và khả năng thử nghiệm trong phạm vi lab. | Giúp để nhóm thống nhất chọn Candidate #1 — Ưu tiên cảnh báo giao dịch đáng ngờ. |
+| Kiểm chứng / research | Tôi tham gia phân tích các tình huống Fraud Analyst cần kiểm tra lịch sử giao dịch, tần suất phát sinh và mức độ rủi ro. | Giúp nhóm xác định rõ những yếu tố cần kiểm tra, xem xét khi ưu tiên cảnh báo và dữ liệu đầu vào cần cân nhắc cho Rule và ML. |
+| Quy trình nhóm | Tôi phụ trách xây dựng quy trình Before/After, xác định actor, input/output, bottleneck và thời gian từng bước; đồng thời đề xuất Rule, ML Risk Scoring và phương án dự phòng khi ML lỗi. | Nhóm xây dựng quy trình tương lai với mục tiêu giảm thời gian xử lý từ 300 xuống ≤170 giây/cảnh báo, giữ Fraud Analyst là người quyết định cuối cùng. |
+| Problem Statement | Tôi tham gia mô tả bottleneck hiện tại và xác định vị trí AI có thể can thiệp sau Rule, trước khi Fraud Analyst kiểm tra. | Problem Statement thể hiện rõ điểm nghẽn, cách cải thiện quy trình và giới hạn tự động hóa. |
+| Mức can thiệp AI | Tôi phân tích khả năng triển khai Workflow gồm Rule + ML + Human-in-the-Loop và phương án quay về rule-based khi AI lỗi hoặc dữ liệu không hợp lệ. | Nhóm lựa chọn Workflow thay vì Agent, đảm bảo mọi cảnh báo được giữ lại và con người kiểm soát quyết định nghiệp vụ. |
+| Quyết định | Tôi đánh giá Feasibility Risk, gồm khả năng làm prototype, yêu cầu dữ liệu, tốc độ xử lý và cơ chế dự phòng. | Góp phần vào quyết định Not Yet, ưu tiên kiểm chứng hiệu quả quy trình trên dữ liệu thử nghiệm trước khi triển khai thực tế. |
 
 ---
 
@@ -171,9 +171,9 @@ Tổng: 30–45 phút/đề cương.
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
+| CP1 Scan | Tìm ra điểm scan mới tôi chưa nghĩ tới | Giúp nhìn nhận một góc nhìn khác chưa scan tới | AI tách ra khỏi Actor quá xa khi đưa ra Story | Sửa lại Job Story và người chịu ảnh hưởng cho phù hợp với Actor hiện có |
+| CP2 Problem Card | Phản biện lại về Problem  | Gợi ý về việc xác định Bottleneck và nghi vấn về việc dùng AI trong problem | | |
+| CP4 Research | Tổng hợp nguồn dẫn chứng để research | Tổng hợp nhiều nguồn truy vấn, có thể đưa ra gọi ý sâu | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
 | CP6 Mức can thiệp / quyết định | | | | |
@@ -185,18 +185,25 @@ Tổng: 30–45 phút/đề cương.
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Sau khi nghe top 3 problems của các bạn khác, tôi nhận thấy domain của các bạn có tính chuyên sâu và thực tiễn, có thể xử lý các bài toán pain ở các dự án có thật hơn đối với các problem tôi đề ra.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Nhóm có lúc bị "solution-first" khi bàn luận sau khi tổng hợp problem. Tuy nhiên, do bàn luận đều trong giai đoạn CP3, các vấn đề đã được làm rõ, và những thiên ý hướng về solution-first đã nhanh chóng bị loại bỏ khi chuyển sang giai đoạn CP4.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Tôi có đổi ý về case bù bài sau khi nghỉ học. Ban đầu case còn có nút thắt mơ hồ về việc sử dụng tổng hợp cả note ghi chú lẫn tài liệu học tập. Tuy nhiên, sau khi phản biện, tôi nhận ra nếu như có note ghi chú thì sẽ không nhất thiết phải sử dụng AI, nên đã đổi focus sang việc tổng hợp bài giảng hôm trước dựa trên giáo trình có sẵn, và note ghi chú chỉ là bổ sung thêm.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Kết quả kiểm chứng khiên tôi bất ngờ với việc giao dịch đáng ngờ có thể xảy ra ở nhiều hơn một khía cạnh, có thể là tần suất, chứ không chỉ duy nhất giá trị chuyển khoản làm thước đo lừa đảo.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Phần khó nhất là ước lượng thời gian kì vọng cho phần After của Quy trình tương lai.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu làm lại, tôi sẽ đổi cách tiếp cận các problem, để khi Actor nhìn thấy sản phẩm họ có thể cảm nhận pain point và đưa ra sản phẩm. Về phần phản biện, tôi sẽ phản biện mạnh hơn về rủi ro bảo mật và lộ thông tin khi sử dụng AI.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Fraud Analyst tốn nhiều thời gian kiểm tra giao dịch đáng ngờ, phải kiểm tra và đối chiếu số liệu một cách thủ công. Khi áp dụng kết hợp giữa Rule và AI tạo nên Workflow, nhóm kì vọng thời gian kiểm tra sẽ giảm từ 5 phút còn dưới 3 phút cho mỗi case lừa đảo và sẽ có ưu tiên. AI sẽ không hoàn toàn thay thế mà chỉ tham gia đối chiếu và xếp hạng ưu tiên, còn lại Analyst vẫn là người chốt phương án xử lý. Quyết định cuối cùng sau phân tích là Not Yet, nhóm vẫn cần thêm số liệu.
 
 ---
 
