@@ -127,50 +127,48 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
-
+| Pitch Problem Card | Tôi đề xuất candidate problem: (1) Ưu tiên cảnh báo giao dịch đáng ngờ, (2) Tự động phân loại và điều phối ticket CSKH, (3) Cảnh báo tài khoản có dấu hiệu lừa đảo trước khi chuyển tiền. Xác định actor, job story, bottleneck và impact của từng bài toán. | Bổ sung 3 bài toán liên quan đến Fintech và chăm sóc khách hàng. Candidate #1 được nhóm lựa chọn để nghiên cứu. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: cách thu thập thông tin từ nhóm chat (#4), cách tổng hợp bài giảng khi thiếu tài liệu (#8) và khả năng theo dõi tiến độ khi thành viên không cập nhật (#6).|  Giúp nhóm xem xét tính khả thi và những giới hạn về dữ liệu đầu vào của các candidate. |
+| Nhận phản biện | Câu hỏi tôi nhận được: Tôi nhận được câu hỏi về nguy cơ bỏ sót gian lận khi ưu tiên sai (#1), khả năng phân loại ticket khi khách hàng mô tả không rõ (#2) và ảnh hưởng của cảnh báo nhầm đến niềm tin khách hàng (#3)| Tôi đã sửa gì: Làm rõ các rủi ro về độ chính xác, False Negative và False Positive khi ứng dụng AI.|
+| Gom cluster / cây OST | Tôi tham gia tổng hợp 12 candidate thành 3 cluster, xác định các Opportunity và phân biệt chúng với những giải pháp như Rule, ML hoặc OCR.| Nhóm xây dựng cây OST với mục tiêu giảm thời gian xử lý thủ công và hạn chế sai sót.|
+| Chọn candidate problem | Tôi trình bày Candidate #1, phân tích actor, bottleneck và khả năng đánh giá hiệu quả bằng thời gian xử lý và chất lượng ưu tiên. | Candidate #1 đạt 31/35 điểm, được nhóm thống nhất lựa chọn. |  Candidate #1 đạt 31/35 điểm, được nhóm thống nhất lựa chọn.|
+| Kiểm chứng / research | Tôi phụ trách xây dựng Assumption Map, tập trung vào khối lượng cảnh báo, khó khăn khi xác định thứ tự ưu tiên và nguy cơ xử lý chậm. Tôi tổng hợp các Interview Snapshot và nghiên cứu tài liệu Basel Committee, Wolfsberg Group.| Nhóm xác định 3 giả định cần ưu tiên kiểm chứng, làm rõ nhu cầu hỗ trợ Fraud Analyst và lựa chọn hướng nghiên cứu Rule kết hợp ML. |
+| Quy trình nhóm |Tôi góp ý về các bước xử lý cảnh báo hiện tại, đặc biệt là việc kiểm tra lịch sử và xác định thứ tự ưu tiên.  |Giúp nhóm xác định bottleneck và xây dựng cơ sở cho quy trình Before/After |
+| Problem Statement | Tôi tham gia làm rõ actor, bottleneck và impact dựa trên kết quả kiểm chứng và research.| Problem Statement tập trung vào việc giảm thời gian rà soát và hạn chế xử lý chậm cảnh báo rủi ro cao.|
+| Mức can thiệp AI |Tôi góp ý về khả năng áp dụng Rule và ML Risk Scoring dựa trên các phương pháp giám sát giao dịch đã nghiên cứu. |Nhóm lựa chọn Rule làm baseline và chỉ thử nghiệm ML khi có khả năng cải thiện hiệu quả. |
+| Quyết định |Tôi tham gia đánh giá Value Risk, đặc biệt là nhu cầu thực tế của Fraud Analyst và mức độ bằng chứng hiện có.  | |
+ Góp phần vào quyết định Not Yet, ưu tiên kiểm chứng và xây dựng prototype trước khi triển khai thực tế. 
 ---
 
 ## 5. Dùng AI
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
-
----
+| **CP1 Scan** | Em dùng AI để gợi ý các vấn đề thực tế trong lĩnh vực Fintech, đặc biệt là phát hiện gian lận và chăm sóc khách hàng. | Giúp em tìm được nhiều hướng bài toán và nhận ra những công việc đang mất nhiều thời gian xử lý thủ công. | Một số ý tưởng còn chung chung, chưa chỉ rõ ai gặp vấn đề và vấn đề xảy ra ở bước nào. | Em chọn lại 3 bài toán có đối tượng sử dụng và quy trình tương đối rõ để phân tích sâu hơn. |
+| **CP2 Problem Card** | Em nhờ AI hỗ trợ viết Job Story, xác định Actor, Bottleneck và gợi ý cách đo lường hiệu quả cho 3 Problem Card. | Giúp em sắp xếp ý tưởng theo đúng cấu trúc và trình bày vấn đề dễ hiểu hơn. | AI đưa ra một số con số về thời gian xử lý và khối lượng công việc nhưng chưa có nguồn kiểm chứng. | Em xem các số liệu này là giả định ban đầu, đồng thời xác định lại bước nào thực sự gây mất thời gian trong quy trình. |
+| **CP4 Research** | Em dùng AI để tìm hiểu các cách ưu tiên cảnh báo gian lận, như rule-based và ML Risk Scoring, cũng như gợi ý các tiêu chí đánh giá. | Giúp em hiểu điểm khác nhau giữa các cách xử lý và những chỉ số cần quan tâm khi thử nghiệm. | AI thường nói ML có thể cải thiện hiệu quả nhưng chưa chứng minh được mức cải thiện cụ thể trên dữ liệu của nhóm. | Em đề xuất so sánh các phương án trên cùng bộ dữ liệu thử nghiệm thay vì kết luận ML tốt hơn ngay từ đầu. |
+| **CP5 Quy trình** | Em dùng AI để hỗ trợ xây dựng quy trình trước và sau khi áp dụng AI, xác định bước nào dùng Rule, ML và con người xử lý. | Giúp em hình dung rõ hơn cách đưa AI vào quy trình hiện tại mà không cần thay đổi toàn bộ cách làm việc. | Ban đầu AI có xu hướng tự động hóa nhiều bước, chưa tính kỹ trường hợp dự đoán sai hoặc hệ thống gặp lỗi. | Em bổ sung bước Fraud Analyst kiểm tra và phương án quay về rule-based nếu AI lỗi hoặc dữ liệu không hợp lệ. |
+| **CP5–6 Problem Statement** | Em nhờ AI hỗ trợ tổng hợp Actor, Bottleneck, Impact, Success Metric và Boundary để viết Problem Statement. | Giúp em diễn đạt vấn đề ngắn gọn hơn và liên kết được điểm nghẽn với kết quả cần cải thiện. | Một số mục tiêu AI đề xuất khá lý tưởng, chưa dựa trên kết quả thử nghiệm thực tế. | Em điều chỉnh lại cách trình bày, phân biệt số liệu ước tính với kết quả đã kiểm chứng và nhấn mạnh việc không được bỏ sót cảnh báo. |
+| **CP6 Mức can thiệp / quyết định** | Em dùng AI để so sánh các mức No AI, Rule, Workflow và Agent, đồng thời xem xét các rủi ro khi triển khai. | Giúp em thấy được ưu, nhược điểm của từng mức và những vấn đề cần kiểm tra trước khi áp dụng thực tế. | AI có xu hướng đề xuất giải pháp phức tạp hơn mức cần thiết và chưa đánh giá đầy đủ rủi ro về dữ liệu, độ chính xác. | Em nghiêng về Workflow kết hợp Rule + ML + Human-in-the-Loop thay vì Agent. Em cũng tham gia đánh giá tính khả thi và thống nhất với nhóm chọn Not Yet để kiểm chứng thêm trước khi triển khai. |
 
 ## 6. Reflection (CP7)
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Khi nghe các bạn trình bày, em nhận ra rằng một bài toán tốt không nhất thiết phải sử dụng công nghệ phức tạp mà quan trọng là xác định đúng vấn đề cần giải quyết
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Với bài toán của em, ban đầu em cũng tập trung vào việc dùng ML để phân loại và ưu tiên cảnh báo giao dịch. Tuy nhiên, khi xây dựng cây OST, nhóm đã phân biệt lại đâu là vấn đề thực tế và đâu chỉ là giải pháp đề xuất. Từ đó, nhóm tập trung vào bottleneck là thời gian kiểm tra cảnh báo thủ công trước khi lựa chọn công nghệ phù hợp.
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+Em nhận được câu hỏi rằng nếu hệ thống ưu tiên sai thì có thể bỏ sót giao dịch gian lận thật hay không. Câu hỏi này khiến em phải xem xét lại việc sử dụng ML để xếp hạng cảnh báo. Thay vì chỉ quan tâm đến tốc độ xử lý, em nhận ra cần chú trọng cả độ chính xác và hậu quả khi mô hình dự đoán sai. Vì vậy, hướng em đề xuất là giữ lại tất cả cảnh báo, sử dụng AI để hỗ trợ sắp xếp mức độ ưu tiên và để Fraud Analyst kiểm tra, quyết định cuối cùng.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Một giải pháp sử dụng AI chưa chắc đã hiệu quả hơn cách xử lý truyền thống. Ban đầu, em nghĩ việc sử dụng ML để đánh giá và ưu tiên các cảnh báo giao dịch sẽ giúp giảm đáng kể thời gian xử lý. Tuy nhiên, khi xem xét kỹ hơn, em nhận ra nếu mô hình dự đoán sai thì có thể khiến những giao dịch gian lận thực sự bị xếp vào nhóm ưu tiên thấp. 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+Khó nhất là diễn đạt đúng vấn đề mà không đưa giải pháp vào quá sớm. Ban đầu, em dễ tập trung vào việc xây dựng hệ thống ML để phát hiện hoặc ưu tiên giao dịch gian lận. Tuy nhiên, vấn đề thực sự của Fraud Analyst là phải xử lý số lượng lớn cảnh báo trong khi thời gian và nguồn lực có hạn. Ngoài ra, việc xác định Success Metric cũng khá khó vì cần có số liệu thực tế để làm baseline.
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+Nếu làm lại, em sẽ dành nhiều thời gian hơn cho việc kiểm chứng vấn đề trước khi nghĩ đến giải pháp. Đặc biệt, em muốn tìm hiểu rõ quy trình xử lý cảnh báo thực tế của Fraud Analyst và có dữ liệu cụ thể về thời gian xử lý, số lượng cảnh báo cũng như tỷ lệ cảnh báo sai. Khi phản biện các bài toán của nhóm, em sẽ tập trung hơn vào nguồn dữ liệu, tính khả thi và cách đo lường hiệu quả.
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+việc Fraud Analyst phải kiểm tra nhiều cảnh báo giao dịch đáng ngờ, dẫn đến mất thời gian và có nguy cơ bỏ sót gian lận. Trong quy trình hiện tại, nhân viên phải xem xét và xác minh từng cảnh báo trước khi đưa ra quyết định xử lý. Nhóm muốn cải thiện thời gian xử lý và khả năng ưu tiên cảnh báo thông qua các chỉ số như thời gian kiểm tra, tỷ lệ phát hiện gian lận và tỷ lệ cảnh báo sai. Tuy nhiên, AI chỉ được hỗ trợ đánh giá mức độ rủi ro, không được tự ý loại bỏ cảnh báo hoặc quyết định giao dịch có gian lận hay không. Vì vậy, nhóm lựa chọn Workflow kết hợp Rule, ML và Human-in-the-Loop thay vì sử dụng Agent tự động. Khi AI gặp lỗi hoặc dữ liệu không hợp lệ, hệ thống có thể quay về xử lý bằng rule-based và chuyển cho con người kiểm tra.
 ---
 
 ## 7. Tài liệu tham khảo
