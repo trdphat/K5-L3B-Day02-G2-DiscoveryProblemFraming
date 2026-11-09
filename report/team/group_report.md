@@ -44,21 +44,31 @@
 ```text
 OUTCOME: Giảm thời gian xử lý công việc thủ công và hạn chế sai sót thông tin.
 
-├── Opportunity A: Người dùng mất nhiều thời gian kiểm tra,
-│   phân loại và trích xuất thông tin để đưa ra quyết định.
+├── Opportunity A: Mất nhiều thời gian kiểm tra,
+│   phân loại và trích xuất thông tin.
+│   │
+│   ├── Solution A1: Ưu tiên cảnh báo giao dịch
+│   │   bằng rule-based hoặc ML Risk Scoring.
+│   │
+│   └── Solution A2: Dùng OCR để hỗ trợ
+│       trích xuất thông tin giấy tờ.
 │
-├── Opportunity B: Người dùng khó tìm kiếm và tổng hợp thông tin
-│   nằm rải rác trong nhiều nguồn khác nhau.
+├── Opportunity B: Khó tìm kiếm và tổng hợp
+│   thông tin từ nhiều nguồn khác nhau.
+│   │
+│   └── Solution B1: Công cụ tìm kiếm và
+│       tóm tắt tài liệu.
 │
-└── Opportunity C: Người dùng khó theo dõi lịch trình, deadline
-    và tiến độ công việc, dẫn đến bỏ sót hoặc chậm hoàn thành.
+└── Opportunity C: Khó theo dõi lịch trình,
+    deadline và tiến độ công việc.
+    │
+    └── Solution C1: Công cụ tổng hợp lịch
+        và nhắc deadline.
+
 ```
+Nhóm ưu tiên xem xét Opportunity A vì các bài toán trong nhóm này có quy trình xử lý tương đối rõ và dễ xác định điểm nghẽn. Trong đó, Candidate #1 liên quan đến việc Fraud Analyst phải kiểm tra nhiều cảnh báo giao dịch, nên nhóm đưa vào shortlist để đánh giá tiếp.
 
-Những ý đã gạch bỏ vì là solution đội lốt opportunity:
-
-- Dùng OCR hoặc LLM để tự động trích xuất thông tin.
-- Xây dựng chatbot AI để tìm kiếm và tóm tắt tài liệu.
-- Tạo ứng dụng tự động nhắc deadline và theo dõi tiến độ.
+Các ý như dùng OCR hoặc LLM để trích xuất thông tin, xây dựng công cụ tóm tắt tài liệu và ứng dụng nhắc deadline được chuyển xuống tầng Solution thay vì xem là Opportunity. Đây mới là các hướng giải quyết ban đầu, nhóm chưa lựa chọn giải pháp triển khai chính thức.
 
 ### 2.4. Chấm điểm shortlist (1–5)
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
@@ -69,14 +79,13 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 **Candidate được chọn:** #1 — Ưu tiên cảnh báo giao dịch đáng ngờ.
 
-**Vì sao chọn:** Bài toán có đối tượng sử dụng, quy trình và điểm nghẽn rõ ràng. Nhóm có thể sử dụng dữ liệu giao dịch giả lập để thử nghiệm và so sánh các phương pháp xử lý thủ công, rule-based và ML Risk Scoring. Hiệu quả có thể đánh giá thông qua thời gian xử lý, khả năng ưu tiên giao dịch rủi ro cao và tỷ lệ phát hiện gian lận.
+**Vì sao chọn:** Nhóm chọn #1 vì bài toán xác định được đối tượng sử dụng, các bước xử lý và điểm nghẽn cần cải thiện. Nhóm cũng có thể dùng dữ liệu giao dịch giả lập để so sánh cách xử lý thủ công, rule-based và ML Risk Scoring. Kết quả có thể đánh giá qua thời gian xử lý, khả năng ưu tiên cảnh báo và tỷ lệ phát hiện gian lận.
 
 **Vì sao loại các candidate còn lại:**
-- **#5:** Gần gũi với sinh viên, dễ tiếp cận tài liệu nhưng việc đánh giá chất lượng tóm tắt và mức độ hiểu đúng nội dung có thể phụ thuộc vào người đánh giá. Nhóm ưu tiên bài toán có tiêu chí đánh giá rủi ro cụ thể hơn.
-- **#10:** Quy trình rõ ràng, dễ triển khai trong lab nhưng cần lưu ý tính bảo mật của giấy tờ và thời gian kiểm tra, chỉnh sửa kết quả OCR. Phạm vi thử nghiệm cũng chủ yếu tập trung vào trích xuất thông tin.
+- **#5:** Bài toán gần gũi với sinh viên và dễ tìm dữ liệu để thử nghiệm. Tuy nhiên, nhóm nhận thấy việc đánh giá bản tóm tắt có chính xác và đầy đủ hay không sẽ cần thêm công sức kiểm tra thủ công.
+- **#10:** Bài toán phù hợp để thử nghiệm OCR, nhưng nhóm lo ngại việc nhận diện sai thông tin trên giấy tờ có thể khiến người dùng phải kiểm tra lại nhiều lần. Ngoài ra, nhóm cần chuẩn bị dữ liệu thử nghiệm không chứa thông tin cá nhân thật.
 
-**Xử lý bất đồng (nếu có):** Các candidate có điểm số tương đối sát nhau. Nhóm cân nhắc khả năng đo lường hiệu quả, mức độ phù hợp với định hướng sản phẩm và thống nhất ưu tiên #1. Các số liệu và giả định sẽ tiếp tục được kiểm chứng trong quá trình thực hiện lab.
-
+**Xử lý bất đồng (nếu có):** Nhóm không có bất đồng lớn khi lựa chọn. Do điểm số của ba candidate khá sát nhau, nhóm trao đổi thêm về khả năng thử nghiệm và cách đánh giá hiệu quả trước khi thống nhất chọn #1.
 
 ## 3. Kiểm chứng + research giải pháp đã có (CP4)
 
