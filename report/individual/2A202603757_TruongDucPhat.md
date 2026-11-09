@@ -64,9 +64,10 @@ Loại bỏ ý 3: vì có thể trùng nguyên nhân bài toán ý 1.
 
 Quy trình nháp hiện tại:
 
-```[1] Khách hàng thực hiện giao dịch -->[2] Hệ thống Rule-based kiểm tra giao dịch --> [3] Phát hiện bất thường và tạo cảnh báo --> [4] Fraud Analyst tiếp nhận cảnh báo --> [5] Tra cứu lịch sử giao dịch, tài khoản, thiết bị và hành vi người dùng --> [6] Đánh giá mức độ rủi ro thủ công (bottleneck) --> [7] Quyết định xử lý --> [8] Ghi nhận kết quả vào hệ thống
 
-```
+[1] Khách hàng thực hiện giao dịch -->[2] Hệ thống Rule-based kiểm tra giao dịch --> [3] Phát hiện bất thường và tạo cảnh báo --> [4] Fraud Analyst tiếp nhận cảnh báo --> [5] Tra cứu lịch sử giao dịch, tài khoản, thiết bị và hành vi người dùng --> [6] Đánh giá mức độ rủi ro thủ công (bottleneck) --> [7] Quyết định xử lý --> [8] Ghi nhận kết quả vào hệ thống
+
+
 
 ### Problem Card #2
 
@@ -85,9 +86,8 @@ Quy trình nháp hiện tại:
 
 Quy trình nháp hiện tại:
 
-```[1] Khách hàng gửi khiếu nại (App / Email / Live Chat) --> [2] Hệ thống CRM tạo ticket --> [3] Customer Support tiếp nhận ticket --> [4] Nhân viên đọc và phân tích nội dung --> [5] Xác định loại khiếu nại, mức độ ưu tiên và bộ phận phụ trách (bottleneck) --> [6] Chuyển ticket đến bộ phận liên quan --> [7] Bộ phận tiếp nhận kiểm tra --> [8] Cập nhật trạng thái và phản hồi khách hàng
+[1] Khách hàng gửi khiếu nại (App / Email / Live Chat) --> [2] Hệ thống CRM tạo ticket --> [3] Customer Support tiếp nhận ticket --> [4] Nhân viên đọc và phân tích nội dung --> [5] Xác định loại khiếu nại, mức độ ưu tiên và bộ phận phụ trách (bottleneck) --> [6] Chuyển ticket đến bộ phận liên quan --> [7] Bộ phận tiếp nhận kiểm tra --> [8] Cập nhật trạng thái và phản hồi khách hàng
 
-```
 
 ### Problem Card #3
 
@@ -106,9 +106,8 @@ Quy trình nháp hiện tại:
 
 Quy trình nháp hiện tại:
 
-```[1] Khách hàng mở chức năng chuyển tiền --> [2] Nhập tài khoản nhận và số tiền -->   [3] Hệ thống kiểm tra thông tin người nhận và các quy tắc rủi ro cơ bản --> [4] Không phát hiện dấu hiệu cần ngăn chặn --> [5] Khách hàng xác nhận giao dịch --> [6] Hệ thống thực hiện chuyển tiền --> [7] Khách hàng phát hiện mình bị lừa (botteneck) --> [8] Liên hệ Customer Support --> [9] Nhân viên tiếp nhận và xác minh --> [10] Chuyển Fraud/Risk Team để tra soát, phối hợp xử lý và hỗ trợ thu hồi tiền
+[1] Khách hàng mở chức năng chuyển tiền --> [2] Nhập tài khoản nhận và số tiền -->   [3] Hệ thống kiểm tra thông tin người nhận và các quy tắc rủi ro cơ bản --> [4] Không phát hiện dấu hiệu cần ngăn chặn --> [5] Khách hàng xác nhận giao dịch --> [6] Hệ thống thực hiện chuyển tiền --> [7] Khách hàng phát hiện mình bị lừa (botteneck) --> [8] Liên hệ Customer Support --> [9] Nhân viên tiếp nhận và xác minh --> [10] Chuyển Fraud/Risk Team để tra soát, phối hợp xử lý và hỗ trợ thu hồi tiền
 
-```
 
 ### Card muốn pitch nhất
 
