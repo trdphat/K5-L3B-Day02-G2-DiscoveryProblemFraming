@@ -5,7 +5,7 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm:G2
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu):
 - Quyết định cuối: Go / Not Yet / No-Go
@@ -18,59 +18,74 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 1 | TruongDucPhat | Khi có nhiều cảnh báo giao dịch đáng ngờ, tôi muốn ưu tiên giao dịch rủi ro cao để giảm thời gian kiểm tra và tránh bỏ sót gian lận. | Fraud Analyst, Fraud Operations Team | Bước 4–5: 5 phút/cảnh báo; 500 cảnh báo/ngày tương đương 41,7 giờ công. | Nếu ưu tiên sai, liệu có bỏ sót giao dịch gian lận thật không? — NguyenMinhNhan |
+| 2 | TruongDucPhat | Khi khách hàng gửi yêu cầu hoặc khiếu nại, tôi muốn ticket được phân loại và chuyển đúng bộ phận để giảm thời gian chờ xử lý. | Customer Support Agent, Customer Support Supervisor và khách hàng | Bước 3–5: 3 phút/ticket; 2.000 ticket/ngày tương đương 100 giờ công. | Nếu khách hàng mô tả vấn đề không rõ ràng thì phân loại ticket thế nào? — HoAnLoc |
+| 3 | TruongDucPhat | Khi chuyển tiền đến tài khoản có dấu hiệu lừa đảo, tôi muốn nhận cảnh báo kịp thời để tránh mất tiền. | Khách hàng sử dụng ứng dụng Fintech; Risk/Fraud Team hỗ trợ kiểm soát rủi ro | Bước 3: thiếu tín hiệu nhận diện tài khoản lừa đảo. Bước 6: tiếp nhận và xác minh ban đầu ước tính 15–30 phút/vụ sau khi tiền đã chuyển. | Nếu cảnh báo nhầm quá nhiều, khách hàng có còn tin vào hệ thống không? — DaoNguyenQuangThanh |
+| 4 | HoAnLoc | Khi chuẩn bị tuần học mới, tôi muốn tổng hợp lịch học và deadline để ưu tiên công việc và tránh bỏ sót bài tập. | Sinh viên năm 4, học khoảng 5 môn | Bước 2: tìm thông báo trong nhóm chat mất 10–15 phút/lần, có nguy cơ bỏ sót. | Nếu thông báo chỉ nằm trong nhóm chat thì hệ thống lấy thông tin bằng cách nào? — TruongDucPhat |
+| 5 | HoAnLoc | Khi làm bài tập lớn hoặc nghiên cứu, tôi muốn nắm nội dung chính, phương pháp và kết quả từ nhiều tài liệu để chọn thông tin phù hợp. | Sinh viên năm 4, làm bài cá nhân hoặc nghiên cứu nhóm | Bước 3: đọc phương pháp và kết quả mất 20–30 phút/tài liệu, lặp lại với 5–7 tài liệu. | Nếu AI tóm tắt sai kết quả nghiên cứu thì làm sao phát hiện? — NguyenMinhNhan |
+| 6 | HoAnLoc | Khi làm bài tập nhóm, tôi muốn theo dõi tiến độ từng thành viên để tổng hợp và nộp bài đúng hạn. | Thành viên nhóm 4–5 người, phụ trách tổng hợp bài | Bước 2: hỏi tiến độ khoảng 15 phút, phải nhắc 2–3 lần; thời gian chờ có thể kéo dài. | Nếu thành viên không cập nhật tiến độ thì hệ thống có giải quyết được vấn đề không? — DaoNguyenQuangThanh |
+| 7 | DaoNguyenQuangThanh | Khi nhận nhiệm vụ mới, tôi muốn tìm lại thông tin từ chat, tài liệu và cuộc họp để hiểu bối cảnh, tránh hỏi lại hoặc làm sai. | Sinh viên đại học đang thực tập | Bước 2–4: tìm và đối chiếu thông tin mất 15–30 phút/lần; chưa xác định nguồn tốn thời gian nhất. | Nếu thông tin trong chat và tài liệu mâu thuẫn nhau thì nên tin nguồn nào? — HoAnLoc |
+| 8 | DaoNguyenQuangThanh | Khi nghỉ học, tôi muốn tổng hợp nội dung bài giảng và bài tập đã bỏ lỡ để theo kịp lớp. | Sinh viên vừa học vừa thực tập | Bước 1–3: hỏi bạn, xin ghi chú và xem tài liệu; tổng quy trình mất 30–60 phút/buổi, chưa xác định bottleneck riêng. | Nếu không có ghi chú hoặc tài liệu buổi học thì AI lấy gì để tổng hợp? — TruongDucPhat |
+| 9 | DaoNguyenQuangThanh | Khi nhận đề cương ôn tập, tôi muốn xác định các dạng bài trung bình–khó để ưu tiên ôn luyện. | Sinh viên chuẩn bị thi nhiều môn | Bước 3–4: tìm bài tập và ước lượng độ khó; tổng thời gian 30–45 phút/đề cương, chưa đo riêng từng bước. | Độ khó bài tập tùy năng lực mỗi người, vậy dựa vào đâu để phân loại? — NguyenMinhNhan |
+| 10 | NguyenMinhNhan | Khi nhận CCCD và giấy đăng ký kinh doanh, tôi muốn trích xuất tên, mã số và địa chỉ để giảm thời gian nhập liệu. | Trợ lý luật sư | Bước 2–3: ước tính hơn 7 phút/bộ hồ sơ. | Nếu OCR vẫn cần kiểm tra lại toàn bộ thông tin thì có thực sự tiết kiệm thời gian không? — HoAnLoc |
+| 11 | NguyenMinhNhan | Khi nhận hợp đồng, tôi muốn trích xuất thời hạn, giá trị và ngày hết hạn để giảm thời gian đọc và tổng hợp. | Chuyên viên pháp lý | Bước 2–4: ước tính 8 phút/hợp đồng. | Nếu hợp đồng có nhiều ngày tháng khác nhau thì làm sao xác định đúng ngày hết hạn? — DaoNguyenQuangThanh |
+| 12 | NguyenMinhNhan | Khi nhận nhiều email từ một khách hàng, tôi muốn tổng hợp yêu cầu và tài liệu đính kèm để tránh bỏ sót công việc. | Trợ lý luật sư | Bước 2–4: ước tính 15 phút/chuỗi email. | Nếu email có nhiều yêu cầu thay đổi liên tục thì làm sao tránh tổng hợp sai? — TruongDucPhat |
 
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| **A — Xử lý và phân loại thông tin** | #1, #2, #3, #9, #10, #11 | Cần kiểm tra, phân loại hoặc trích xuất thông tin để đưa ra quyết định nhanh và chính xác hơn, giảm thao tác thủ công. |
+| **B — Tìm kiếm và tổng hợp thông tin** | #5, #7, #8, #12 | Thông tin nằm rải rác trong nhiều tài liệu, email hoặc nguồn khác nhau, khiến người dùng mất thời gian tìm kiếm, đọc và tổng hợp. |
+| **C — Theo dõi và quản lý công việc** | #4, #6 | Khó theo dõi lịch trình, deadline và tiến độ công việc, dễ bỏ sót hoặc chậm hoàn thành nhiệm vụ. |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
-Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
-
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm thời gian xử lý công việc thủ công và hạn chế sai sót thông tin.
+
+├── Opportunity A: Mất nhiều thời gian kiểm tra,
+│   phân loại và trích xuất thông tin.
+│   │
+│   ├── Solution A1: Ưu tiên cảnh báo giao dịch
+│   │   bằng rule-based hoặc ML Risk Scoring.
+│   │
+│   └── Solution A2: Dùng OCR để hỗ trợ
+│       trích xuất thông tin giấy tờ.
+│
+├── Opportunity B: Khó tìm kiếm và tổng hợp
+│   thông tin từ nhiều nguồn khác nhau.
+│   │
+│   └── Solution B1: Công cụ tìm kiếm và
+│       tóm tắt tài liệu.
+│
+└── Opportunity C: Khó theo dõi lịch trình,
+    deadline và tiến độ công việc.
+    │
+    └── Solution C1: Công cụ tổng hợp lịch
+        và nhắc deadline.
+
 ```
+Nhóm ưu tiên xem xét Opportunity A vì các bài toán trong nhóm này có quy trình xử lý tương đối rõ và dễ xác định điểm nghẽn. Trong đó, Candidate #1 liên quan đến việc Fraud Analyst phải kiểm tra nhiều cảnh báo giao dịch, nên nhóm đưa vào shortlist để đánh giá tiếp.
 
-Những ý đã gạch bỏ vì là solution đội lốt opportunity:
-
--
+Các ý như dùng OCR hoặc LLM để trích xuất thông tin, xây dựng công cụ tóm tắt tài liệu và ứng dụng nhắc deadline được chuyển xuống tầng Solution thay vì xem là Opportunity. Đây mới là các hướng giải quyết ban đầu, nhóm chưa lựa chọn giải pháp triển khai chính thức.
 
 ### 2.4. Chấm điểm shortlist (1–5)
-
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| #1 — Ưu tiên cảnh báo giao dịch đáng ngờ | 5 | 5 | 2 | 5 | 4 | 5 | 5 | **31** |
+| #5 — Đọc và tổng hợp tài liệu nghiên cứu | 5 | 5 | 3 | 4 | 4 | 4 | 5 | **30** |
+| #10 — Trích xuất thông tin CCCD và giấy đăng ký kinh doanh | 5 | 5 | 2 | 5 | 5 | 4 | 3 | **29** |
 
-**Candidate được chọn:**
+**Candidate được chọn:** #1 — Ưu tiên cảnh báo giao dịch đáng ngờ.
 
-**Vì sao chọn:**
+**Vì sao chọn:** Nhóm chọn #1 vì bài toán xác định được đối tượng sử dụng, các bước xử lý và điểm nghẽn cần cải thiện. Nhóm cũng có thể dùng dữ liệu giao dịch giả lập để so sánh cách xử lý thủ công, rule-based và ML Risk Scoring. Kết quả có thể đánh giá qua thời gian xử lý, khả năng ưu tiên cảnh báo và tỷ lệ phát hiện gian lận.
 
 **Vì sao loại các candidate còn lại:**
+- **#5:** Bài toán gần gũi với sinh viên và dễ tìm dữ liệu để thử nghiệm. Tuy nhiên, nhóm nhận thấy việc đánh giá bản tóm tắt có chính xác và đầy đủ hay không sẽ cần thêm công sức kiểm tra thủ công.
+- **#10:** Bài toán phù hợp để thử nghiệm OCR, nhưng nhóm lo ngại việc nhận diện sai thông tin trên giấy tờ có thể khiến người dùng phải kiểm tra lại nhiều lần. Ngoài ra, nhóm cần chuẩn bị dữ liệu thử nghiệm không chứa thông tin cá nhân thật.
 
-**Xử lý bất đồng (nếu có):**
-
----
+**Xử lý bất đồng (nếu có):** Nhóm không có bất đồng lớn khi lựa chọn. Do điểm số của ba candidate khá sát nhau, nhóm trao đổi thêm về khả năng thử nghiệm và cách đánh giá hiệu quả trước khi thống nhất chọn #1.
 
 ## 3. Kiểm chứng + research giải pháp đã có (CP4)
 
