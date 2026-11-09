@@ -43,15 +43,9 @@ Loại bỏ ý 3: vì có thể trùng nguyên nhân bài toán ý 1.
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | Kiểm tra thủ công giao dịch đáng ngờ | Tần suất lặp lại cao (giả định 500 cảnh báo/ngày, 5 phút/cảnh báo), gây tốn thời gian và nguồn lực của Fraud Team. AI có thể hỗ trợ phân tích, chấm điểm và ưu tiên giao dịch rủi ro cao, giúp giảm khối lượng kiểm tra thủ công. | 80% cảnh báo không cần xử lý thêm có thực sự là cảnh báo sai không?
-Dữ liệu giao dịch và kết quả điều tra có đủ chất lượng để huấn luyện AI không?
-AI có thể giảm thời gian xử lý mà không bỏ sót gian lận không? |
-| 2 | Phân loại thủ công khiếu nại khách hàng | Công việc có tính lặp lại cao (giả định 2.000 ticket/ngày, 3 phút/ticket), quy trình rõ ràng và dễ đo lường hiệu quả. AI có thể tự động phân loại và chuyển ticket đến đúng bộ phận, giúp giảm thời gian xử lý và tăng tốc độ phản hồi khách hàng. | Tỷ lệ ticket bị phân loại sai hiện tại là bao nhiêu?
-Dữ liệu ticket lịch sử có được gán nhãn đầy đủ không?
-AI có thực sự hiệu quả hơn hệ thống rule-based hiện tại không? |
-| 3 | Cảnh báo khách hàng chuyển tiền lừa đảo | Gây thiệt hại trực tiếp về tài chính và ảnh hưởng đến uy tín công ty (giả định 100 khiếu nại/tháng). AI có tiềm năng phân tích hành vi và phát hiện giao dịch đáng ngờ trước khi hoàn tất chuyển tiền, từ đó hạn chế tổn thất cho khách hàng. | Có đủ dữ liệu về các giao dịch lừa đảo đã được xác minh không?
-AI có thể phát hiện rủi ro trước khi tiền được chuyển đi không?
-Làm thế nào để hạn chế cảnh báo sai gây ảnh hưởng trải nghiệm khách hàng? |
+| 1 | Kiểm tra thủ công giao dịch đáng ngờ | Tần suất lặp lại cao (giả định 500 cảnh báo/ngày, 5 phút/cảnh báo), gây tốn thời gian và nguồn lực của Fraud Team. AI có thể hỗ trợ phân tích, chấm điểm và ưu tiên giao dịch rủi ro cao, giúp giảm khối lượng kiểm tra thủ công. | 80% cảnh báo không cần xử lý thêm có thực sự là cảnh báo sai không?. Dữ liệu giao dịch và kết quả điều tra có đủ chất lượng để huấn luyện AI không?. AI có thể giảm thời gian xử lý mà không bỏ sót gian lận không? |
+| 2 | Phân loại thủ công khiếu nại khách hàng | Công việc có tính lặp lại cao (giả định 2.000 ticket/ngày, 3 phút/ticket), quy trình rõ ràng và dễ đo lường hiệu quả. AI có thể tự động phân loại và chuyển ticket đến đúng bộ phận, giúp giảm thời gian xử lý và tăng tốc độ phản hồi khách hàng. | Tỷ lệ ticket bị phân loại sai hiện tại là bao nhiêu? Dữ liệu ticket lịch sử có được gán nhãn đầy đủ không? AI có thực sự hiệu quả hơn hệ thống rule-based hiện tại không? |
+| 3 | Cảnh báo khách hàng chuyển tiền lừa đảo | Gây thiệt hại trực tiếp về tài chính và ảnh hưởng đến uy tín công ty (giả định 100 khiếu nại/tháng). AI có tiềm năng phân tích hành vi và phát hiện giao dịch đáng ngờ trước khi hoàn tất chuyển tiền, từ đó hạn chế tổn thất cho khách hàng. | Có đủ dữ liệu về các giao dịch lừa đảo đã được xác minh không? AI có thể phát hiện rủi ro trước khi tiền được chuyển đi không? Làm thế nào để hạn chế cảnh báo sai gây ảnh hưởng trải nghiệm khách hàng? |
 
 ### Problem Card #1
 
