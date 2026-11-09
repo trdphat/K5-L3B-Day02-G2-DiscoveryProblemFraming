@@ -7,7 +7,7 @@
 
 - Tên nhóm:G2
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):Ưu tiên cảnh báo giao dịch đáng ngờ.
+- Candidate problem được chọn (1 câu):Ưu tiên cảnh báo giao dịch đáng ngờ, giúp Fraud Analyst xác định các giao dịch rủi ro cao cần kiểm tra trước.
 - Quyết định cuối: Not Yet
 
 ---
