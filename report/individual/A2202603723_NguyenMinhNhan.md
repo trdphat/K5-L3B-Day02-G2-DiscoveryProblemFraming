@@ -61,6 +61,7 @@ Chatbot tư vấn pháp lý tự động: Phạm vi quá rộng, yêu cầu đ�
 | Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
+```text
 flowchart LR
     A[Khách hàng gửi giấy tờ] --> B[Trợ lý tiếp nhận hồ sơ]
     B --> C[Đọc thông tin]
@@ -69,8 +70,6 @@ flowchart LR
     E -->|Có| F[Lưu hồ sơ]
     E -->|Không| G[Chỉnh sửa thông tin]
     G --> E
-```text
-
 ```
 
 ### Problem Card #2
@@ -89,6 +88,8 @@ flowchart LR
 | Cảm nhận nhanh | Workflow|
 
 Quy trình nháp hiện tại:
+
+```text
 flowchart LR
     A[Khách hàng gửi hợp đồng] --> B[Chuyên viên tiếp nhận]
     B --> C[Đọc nội dung hợp đồng]
@@ -98,8 +99,6 @@ flowchart LR
     F -->|Có| G[Kiểm tra và tổng hợp]
     F -->|Không| H[Tìm thông tin bổ sung]
     H --> E
-```text
-
 ```
 
 ### Problem Card #3
@@ -118,6 +117,8 @@ flowchart LR
 | Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
+
+```text
 flowchart LR
     A[Khách hàng gửi email] --> B[Trợ lý mở chuỗi email]
     B --> C[Đọc từng email]
@@ -127,8 +128,6 @@ flowchart LR
     F -->|Chưa| C
     F -->|Rồi| G[Tổng hợp yêu cầu]
     G --> H[Chuyển luật sư]
-```text
-
 ```
 
 ### Card muốn pitch nhất
