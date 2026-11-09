@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — MSSV_HoTen
+# Báo cáo cá nhân — 2A202603754_Đào Nguyễn Quang Thành
 
 > Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
 > Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Họ tên: Đào Nguyễn Quang Thành
+- MSSV: 2A202603754
+- Email trường (không bắt buộc, repo có thể để public): 26ai.thanhdnq@vinuni.edu.vn
+- Tên nhóm: G2
+- Link repo nhóm: https://github.com/trdphat/K5-L3B-Day02-G2-DiscoveryProblemFraming
 
 ---
 
