@@ -49,12 +49,12 @@ Actor: Sinh viên gốc dưới quê đang vừa học đại học vừa làm t
 | Job Story | Khi được giao nhiệm vụ mới hoặc muốn hiểu vì sao nhóm chọn một hướng giải quyết, tôi muốn tìm lại thông tin từ tin nhắn, tài liệu và các buổi họp trước đó, để không phải hỏi lại nhiều lần hoặc làm sai yêu cầu. |
 | Actor | Sinh viên đại học đang thực tập tại thành phố, chưa nắm hết bối cảnh dự án. |
 | Thời điểm / bối cảnh | Khi nhận nhiệm vụ mới, tiếp nhận công việc từ người thực tập trước hoặc cần hiểu lý do nhóm chọn một hướng giải quyết. |
-| Quy trình hiện tại (3–7 bước) | 1. Xác định nhiệm vụ/câu hỏi cần làm rõ. 2. Tìm tin nhắn trong nhóm chat. 3. Tìm tài liệu và ghi chú họp liên quan. 4. Đối chiếu thông tin để hiểu yêu cầu/bối cảnh. 5. Hỏi lại anh chị trong nhóm nếu vẫn chưa rõ. |
+| Quy trình hiện tại (3–7 bước) | 1. Xác định nhiệm vụ/câu hỏi cần làm rõ. 2. Tìm tài liệu đã được thống nhất/phê duyệt và thông tin liên quan trong chat, ghi chú họp. 3. Ưu tiên tài liệu chính thức, kiểm tra ngày cập nhật. 4. Nếu nguồn mâu thuẫn hoặc tài liệu chưa cập nhật, hỏi cấp trên/đồng nghiệp để xác nhận. 5. Ghi lại yêu cầu đã xác nhận và thực hiện. |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–4: tìm và đối chiếu thông tin trong chat, tài liệu và ghi chú họp; khoảng 15–30 phút/lần. Chưa rõ nguồn nào chiếm nhiều thời gian nhất. |
 | Impact (nếu không giải thì sao) | Xảy ra khoảng 1–2 lần/tuần trong giai đoạn dự án bận; mất thời gian tự học, có thể chậm hoàn thành nhiệm vụ hoặc làm sai yêu cầu. |
-| Success metric (baseline → target) | Thời gian tìm bối cảnh: 15–30 phút → dưới 5 phút/lần; thông tin trả về có nguồn để người dùng tự xác minh. |
-| Phương án không dùng AI | Quy ước lưu trữ/đặt tên tài liệu, ghi lại quyết định và yêu cầu, tìm theo từ khóa; hỏi người phụ trách nếu còn thiếu. |
-| Giả thuyết về AI (nếu có) | AI tìm trong nguồn được phép truy cập, tóm lược ngữ cảnh và dẫn lại nguồn để xác minh; cần so sánh với tìm kiếm và quy ước tài liệu trước. |
+| Success metric (baseline → target) | Thời gian tìm bối cảnh: 15–30 phút → dưới 5 phút/lần; kết quả dẫn nguồn, nêu rõ mâu thuẫn/chỗ cần hỏi xác nhận và không tự kết luận khi chưa rõ. |
+| Phương án không dùng AI | Quy ước lưu trữ/đặt tên tài liệu, ghi ngày cập nhật và quyết định đã phê duyệt, tìm theo từ khóa; hỏi cấp trên/đồng nghiệp khi nguồn mâu thuẫn hoặc chưa cập nhật. |
+| Giả thuyết về AI (nếu có) | AI tìm và trích dẫn nguồn, ưu tiên tài liệu chính thức đã phê duyệt; khi phát hiện mâu thuẫn hoặc không rõ phiên bản mới nhất, báo người dùng xác minh với cấp trên/đồng nghiệp thay vì tự chọn câu trả lời. |
 | Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
@@ -62,13 +62,15 @@ Quy trình nháp hiện tại:
 ```text
 [1. Xác định nhiệm vụ hoặc câu hỏi cần làm rõ]
           ↓
-[2. Tìm thông tin trong chat, tài liệu và ghi chú họp]
+[2. Tìm tài liệu chính thức và thông tin liên quan trong chat/ghi chú] ← Bottleneck cần xác minh
           ↓
-[3. Đối chiếu nguồn để hiểu yêu cầu/bối cảnh] ← Bottleneck cần xác minh
+[3. Ưu tiên tài liệu đã phê duyệt, kiểm tra ngày cập nhật]
           ↓
-[4. Hỏi lại anh chị trong nhóm nếu thông tin vẫn chưa đủ]
+[4. Hỏi cấp trên/đồng nghiệp nếu nguồn mâu thuẫn hoặc chưa rõ]
+          ↓
+[5. Ghi nhận yêu cầu đã xác minh và thực hiện]
 
-Tổng thời gian tìm kiếm ước tính: 15–30 phút/lần; cần ghi nhận thực tế.
+Tổng thời gian tìm kiếm và xác minh ước tính: 15–30 phút/lần; cần ghi nhận thực tế.
 ```
 
 ### Problem Card #2
@@ -78,26 +80,26 @@ Tổng thời gian tìm kiếm ước tính: 15–30 phút/lần; cần ghi nh�
 | Job Story | Khi bạn cùng lớp nghỉ học vì lý do cá nhân, họ muốn biết những nội dung bài giảng và yêu cầu bài tập đã bỏ lỡ, để có thể theo kịp tiến độ học tập. |
 | Actor | Sinh viên vừa học vừa thực tập, đặc biệt là người sống xa gia đình, cần tự cập nhật bài sau buổi nghỉ. |
 | Thời điểm / bối cảnh | Sau khi nghỉ học vì lịch thực tập hoặc lý do cá nhân, nhất là khi có bài tập, deadline hay thông báo mới. |
-| Quy trình hiện tại (3–7 bước) | 1. Hỏi bạn cùng lớp về nội dung đã học. 2. Xin ghi chú hoặc ảnh bảng. 3. Đọc slide/tài liệu. 4. Kiểm tra yêu cầu bài tập và deadline. 5. Xác định phần kiến thức còn thiếu. |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 1–3: hỏi bạn, xin ghi chú và xem tài liệu; toàn bộ quy trình mất khoảng 30–60 phút/buổi. Chưa xác định bước riêng nào là bottleneck. |
+| Quy trình hiện tại (3–7 bước) | 1. Tìm slide, tài liệu môn học và bài tập trên nguồn lớp/LMS. 2. Đọc tài liệu để xác định nội dung đã học. 3. Kiểm tra bài tập và deadline trên thông báo chính thức. 4. Hỏi bạn xin ghi chú/ảnh bảng để bổ sung phần tài liệu chưa thể hiện. 5. Đối chiếu và ghi lại phần còn thiếu. |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 1–2: tìm và tổng hợp slide/tài liệu/bài tập; quy trình hiện mất khoảng 30–60 phút/buổi. Ghi chú bạn học là nguồn bổ trợ; chưa có số liệu xác định bước nào tốn thời gian nhất. |
 | Impact (nếu không giải thì sao) | Nếu nghỉ 2 buổi/tháng, bù bài mất khoảng 60–120 phút/tháng; có thể bỏ sót nội dung, bài tập hoặc deadline và khó theo kịp lớp. |
-| Success metric (baseline → target) | Thời gian bù bài: 30–60 phút → dưới 15 phút/buổi; xác nhận được nội dung, bài tập và deadline quan trọng từ tài liệu lớp. |
-| Phương án không dùng AI | Nhóm lớp chia sẻ ghi chú, slide, bài tập và thông báo thống nhất sau mỗi buổi học. |
-| Giả thuyết về AI (nếu có) | AI đối chiếu ghi chú, slide và thông báo để tổng hợp phần đã bỏ lỡ, chỉ ra phần thiếu nguồn và liệt kê bài tập/deadline để sinh viên xác nhận. |
+| Success metric (baseline → target) | Thời gian bù bài: 30–60 phút → dưới 15 phút/buổi; tổng hợp đủ nội dung, bài tập và deadline có trong nguồn lớp, kèm nguồn để đối chiếu; nêu rõ nếu thiếu tài liệu. |
+| Phương án không dùng AI | Nhóm lớp chia sẻ slide, tài liệu, bài tập và thông báo chính thức sau buổi học; ghi chú cá nhân dùng để bổ sung. |
+| Giả thuyết về AI (nếu có) | AI tìm và tổng hợp slide/tài liệu/bài tập/thông báo hiện có, dẫn nguồn và báo phần không có dữ liệu; ghi chú bạn học chỉ dùng bổ trợ để làm rõ nội dung. |
 | Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
 
 ```text
-[1. Hỏi bạn cùng lớp: 5–10 phút]
+[1. Tìm slide, tài liệu và bài tập trên nguồn lớp/LMS: 5–10 phút]
           ↓
-[2. Xin ghi chú/ảnh bảng: 5–15 phút]
+[2. Đọc và tổng hợp nội dung tài liệu: 10–20 phút] ← Bottleneck cần xác minh
           ↓
-[3. Đọc slide và tài liệu: 10–20 phút] ← Bottleneck cần xác minh
+[3. Kiểm tra bài tập/deadline trên thông báo: 5–10 phút]
           ↓
-[4. Kiểm tra bài tập/deadline: 5–10 phút]
+[4. Hỏi bạn xin ghi chú bổ trợ nếu cần: 5–15 phút]
           ↓
-[5. Xác định phần còn thiếu: 5 phút]
+[5. Đối chiếu và ghi phần còn thiếu: 5 phút]
 
 Tổng: 30–60 phút/buổi.
 ```
@@ -109,12 +111,12 @@ Tổng: 30–60 phút/buổi.
 | Job Story | Khi nhận được đề cương ôn tập, tôi muốn biết phần nào có nhiều bài tập mức trung bình đến khó, để ưu tiên ôn tập trước. |
 | Actor | Sinh viên bước vào mùa ôn thi, phải ôn nhiều môn trong thời gian giới hạn. |
 | Thời điểm / bối cảnh | Khi nhận đề cương trước kỳ thi; thường phải xử lý 3–5 môn trong một kỳ. |
-| Quy trình hiện tại (3–7 bước) | 1. Đọc đề cương. 2. Xác định các chủ đề. 3. Dò bài tập tương ứng. 4. Ước lượng độ khó. 5. Xác định thứ tự ưu tiên ôn tập. |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3–4: dò bài tập và tự ước lượng độ khó; thuộc tổng thời gian 30–45 phút/đề cương. Chưa đo riêng thời gian từng bước. |
+| Quy trình hiện tại (3–7 bước) | 1. Đọc đề cương và xác định các chủ đề. 2. Dò bài tập/mục tiêu học tập tương ứng. 3. Thống kê số lượng hoặc tỷ trọng bài mức trung bình–khó theo nhãn/tiêu chí của môn học. 4. Đối chiếu với năng lực và mục tiêu cá nhân. 5. Tự chọn thứ tự ưu tiên ôn tập. |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–3: dò bài và thống kê tỷ trọng bài trung bình–khó, thuộc tổng thời gian 30–45 phút/đề cương. Chưa đo riêng thời gian; không thể xác định mức khó phù hợp với từng sinh viên nếu chưa biết năng lực/điểm số của họ. |
 | Impact (nếu không giải thì sao) | Rà soát 3–5 môn mất khoảng 90–225 phút mỗi kỳ thi, chưa tính thời gian ôn sai trọng tâm. |
-| Success metric (baseline → target) | Thời gian phân loại: 30–45 phút → dưới 15 phút/đề cương; độ chính xác khi xác định bài tập mức trung bình–khó không giảm. |
+| Success metric (baseline → target) | Thời gian xác định chủ đề và tỷ trọng bài trung bình–khó: 30–45 phút → dưới 15 phút/đề cương; thống kê khớp với nhãn/tiêu chí có trong nguồn. Sinh viên tự chọn ưu tiên theo năng lực của mình. |
 | Phương án không dùng AI | Dùng mục lục đề cương, phân loại thủ công theo chủ đề và checklist độ khó. |
-| Giả thuyết về AI (nếu có) | AI hỗ trợ phân loại dạng bài và ước lượng độ khó từ đề cương, bài tập mẫu; sinh viên kiểm tra lại trước khi quyết định thứ tự ôn tập. |
+| Giả thuyết về AI (nếu có) | AI trích xuất chủ đề và thống kê tỷ trọng bài trung bình–khó khi đề cương/bài tập có nhãn hoặc tiêu chí rõ; không suy đoán năng lực cá nhân, sinh viên tự chọn phần cần ôn trước. |
 | Cảm nhận nhanh | Workflow. |
 
 Quy trình nháp hiện tại:
@@ -124,9 +126,9 @@ Quy trình nháp hiện tại:
           ↓
 [2. Xác định chủ đề: 5 phút]
           ↓
-[3. Dò bài tập tương ứng: 10–15 phút] ← Bottleneck cần xác minh
+[3. Dò bài và thống kê tỷ trọng mức độ: 10–15 phút] ← Bottleneck cần xác minh
           ↓
-[4. Ước lượng độ khó: 5–15 phút]
+[4. So sánh với năng lực/mục tiêu cá nhân: 5–15 phút]
           ↓
 [5. Sắp xếp ưu tiên: 5 phút]
 
@@ -153,10 +155,10 @@ Tổng: 30–45 phút/đề cương.
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
 | Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: cho TruongDucPhat: “Nếu cảnh báo nhầm quá nhiều, khách hàng có còn tin vào hệ thống không?”; cho HoAnLoc: “Nếu thành viên không cập nhật tiến độ thì hệ thống có giải quyết được vấn đề không?”; cho NguyenMinhNhan: “Nếu hợp đồng có nhiều ngày tháng khác nhau thì làm sao xác định đúng ngày hết hạn?” | Làm rõ rủi ro về độ chính xác của cảnh báo, sự phụ thuộc vào cập nhật của người dùng và cách xác định đúng thông tin từ hợp đồng. |
+| Nhận phản biện | HoAnLoc: “Nếu thông tin trong chat và tài liệu mâu thuẫn nhau thì nên tin nguồn nào?”; TruongDucPhat: “Nếu không có ghi chú hoặc tài liệu buổi học thì AI lấy gì để tổng hợp?”; NguyenMinhNhat: “Độ khó bài tập tùy năng lực mỗi người, vậy dựa vào đâu để phân loại?” | Sửa các phần sau: #1: Ưu tiên tài liệu chính thức đã được thống nhất/phê duyệt; kiểm tra ngày cập nhật và hỏi cấp trên/đồng nghiệp khi mâu thuẫn hoặc cần cập nhật. #2: Tập trung tìm slide, tài liệu, bài tập và thông báo hiện có; dùng ghi chú bạn học làm nguồn bổ trợ, nêu rõ phần thiếu nguồn. #3: Chỉ thống kê tỷ trọng bài trung bình–khó theo nhãn/tiêu chí trong đề cương; để sinh viên tự chọn ưu tiên theo năng lực, không suy đoán điểm số cá nhân. |
+| Gom cluster / cây OST | Phân tích các vấn đề tìm kiếm và tổng hợp từ nhiều nguồn, góp phần xây dừng Opportunity B | Xây dựng được Oppoturnity B cho cây OST |
+| Chọn candidate problem | Tổng hợp bảng chấm điểm của 3 candidate (#1, #5 và #10) theo 7 tiêu chí đã thống nhất, đồng thời kiểm tra lại tổng điểm để đảm bảo tính chính xác và nhất quán. | Giúp nhóm có cơ sở so sánh khách quan giữa 3 candidate, xác định phương án phù hợp nhất và thống nhất lựa chọn Candidate #1 dựa trên kết quả đánh giá. |
 | Kiểm chứng / research | | |
 | Quy trình nhóm | | |
 | Problem Statement | | |
