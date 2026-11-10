@@ -120,7 +120,7 @@ Nhóm chọn ba giả định này vì chúng liên quan trực tiếp đến v�
 | Câu nói đáng nhớ nhất | “Nếu có nhiều cảnh báo cùng lúc, tôi thường xem những giao dịch có dấu hiệu bất thường rõ nhất trước, chứ không kiểm tra lần lượt từ trên xuống.”  |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Trong một ngày có lượng giao dịch tăng cao, nhiều cảnh báo phát sinh trong cùng khoảng thời gian. Danh sách gồm cả những giao dịch thông thường và những trường hợp có dấu hiệu đáng ngờ, khiến nhân viên phải xem qua thông tin từng cảnh báo để xác định trường hợp cần ưu tiên. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Dựa vào giá trị giao dịch, tần suất phát sinh và lịch sử hoạt động của tài khoản để lựa chọn những trường hợp cần kiểm tra trước. |
-| Mất bao lâu, bao lần? | Chưa có số liệu thực tế. Trong CP3, nhóm tạm ước tính trung bình 5 phút/cảnh báo và cần tiếp tục xác minh. |
+| Mất bao lâu, bao lần? | Uớc tính trung bình 5 phút/cảnh báo . |
 | Insight / opportunity rút ra | Việc xác định thứ tự ưu tiên có thể làm tăng thời gian rà soát ban đầu khi nhiều cảnh báo xuất hiện cùng lúc. Một danh sách được sắp xếp theo mức độ rủi ro có thể hỗ trợ bước này. |
 
 #### Interview Snapshot #2
@@ -131,7 +131,7 @@ Nhóm chọn ba giả định này vì chúng liên quan trực tiếp đến v�
 | Câu nói đáng nhớ nhất | “Có những giao dịch nhìn qua khá bình thường, nhưng khi xem lịch sử thì mới thấy có điểm đáng nghi.”  |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Một tài khoản phát sinh nhiều giao dịch chuyển tiền liên tiếp với giá trị không quá lớn. Nếu chỉ xét từng giao dịch riêng lẻ thì chưa có dấu hiệu rõ ràng. Tuy nhiên, khi đối chiếu lịch sử, nhân viên nhận thấy tần suất giao dịch tăng bất thường và cần kiểm tra kỹ hơn. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Kiểm tra lịch sử giao dịch, đối chiếu với hoạt động trước đó và xem xét thêm các dấu hiệu liên quan trước khi đưa ra đánh giá. |
-| Mất bao lâu, bao lần? | Chưa có thời gian đo cụ thể. Việc phải đối chiếu thêm thông tin có thể kéo dài quá trình kiểm tra. |
+| Mất bao lâu, bao lần? | Ước tính 5p cho một lịch sử giao dịch, nhưng số lượng tài khoản rất nhiều |
 | Insight / opportunity rút ra | Mức độ rủi ro không thể đánh giá chỉ dựa trên số tiền giao dịch. Hệ thống hỗ trợ nên cung cấp thêm thông tin về tần suất và lịch sử hoạt động để người kiểm tra có đủ cơ sở đánh giá. |
 
 #### Interview Snapshot #3
@@ -142,7 +142,7 @@ Nhóm chọn ba giả định này vì chúng liên quan trực tiếp đến v�
 | Câu nói đáng nhớ nhất | “Nên lọc những giao dịch có dấu hiệu bất thường trước. Nếu cảnh báo nào cũng kiểm tra thủ công thì sẽ mất khá nhiều thời gian.”  |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Khi rà soát một danh sách cảnh báo, nhân viên gặp nhiều giao dịch có đặc điểm tương tự nhau. Thay vì kiểm tra lần lượt, nhân viên phân nhóm theo giá trị và tần suất giao dịch để xác định các trường hợp cần chú ý trước. Một số giao dịch vẫn phải đối chiếu thêm lịch sử mới có thể đánh giá. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Sử dụng các dấu hiệu như giá trị giao dịch lớn, tần suất cao hoặc hoạt động khác thường để phân nhóm và ưu tiên kiểm tra. |
-| Mất bao lâu, bao lần? | Chưa có số liệu đo trực tiếp về thời gian tiết kiệm được. |
+| Mất bao lâu, bao lần? | Ước tính mất 1 đến 2 tiếng để rà soát danh sách cảnh báo mỗi ngày |
 | Insight / opportunity rút ra | Việc sàng lọc bằng các quy tắc đơn giản có thể hỗ trợ bước kiểm tra ban đầu. Nhóm nên thử nghiệm rule-based trước khi đánh giá liệu ML có mang lại hiệu quả tốt hơn hay không. |
 
 #### Tổng hợp
