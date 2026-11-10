@@ -496,7 +496,7 @@ Trong phạm vi ưu tiên cảnh báo, nhóm đánh giá **False Negative** — 
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | **Cao** | Bài toán được xác định từ các giả định CP3–CP4 nhưng chưa được xác nhận bằng phỏng vấn Fraud Analyst thực tế. Chưa chứng minh được mức độ nghiêm trọng và nhu cầu sử dụng. |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | **Trung bình** | Các phản hồi phỏng vấn bước đầu cho thấy việc xác định thứ tự ưu tiên và đối chiếu lịch sử giao dịch là những khó khăn đáng quan tâm. Tuy nhiên, nhóm chưa xác định được mức độ phổ biến của vấn đề và chưa chứng minh giải pháp xếp hạng cảnh báo mang lại hiệu quả tốt hơn quy trình hiện tại hoặc rule-based. |
 | **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | **Trung bình** | Danh sách xếp hạng và điểm rủi ro tương đối dễ trình bày. Tuy nhiên, chưa thử nghiệm giao diện với người dùng thực tế để xác nhận mức độ dễ hiểu và khả năng điều chỉnh. |
 | **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | **Trung bình** | Có thể xây dựng rule-based và thử nghiệm ML bằng Python, scikit-learn hoặc các công cụ tương đương. Rủi ro chính là chất lượng dataset, nhãn gian lận, mất cân bằng lớp và khả năng tạo đặc trưng lịch sử. |
 | **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **Cao** | Dữ liệu giao dịch có tính nhạy cảm; chưa có xác nhận về quyền truy cập dữ liệu, chi phí triển khai thực tế và đơn vị chịu trách nhiệm vận hành. |
@@ -507,7 +507,7 @@ Trong phạm vi ưu tiên cảnh báo, nhóm đánh giá **False Negative** — 
 
 **Lý do:**
 
-Bài toán có hướng giải pháp khả thi về mặt kỹ thuật và có thể xây dựng một prototype để đánh giá. Tuy nhiên, nhóm chưa có đủ bằng chứng về nhu cầu thực tế của Fraud Analyst, chất lượng dữ liệu và khả năng cải thiện so với rule-based.
+Bài toán có hướng giải pháp khả thi về mặt kỹ thuật và có thể xây dựng một prototype để đánh giá. Tuy nhiên, nhóm đã làm rõ đã có tín hiệu ban đầu nhưng chưa đủ để đánh giá mức độ phổ biến, chất lượng dữ liệu và khả năng cải thiện so với rule-based.
 
 Vì vậy, nhóm chưa nên kết luận ML là giải pháp cần thiết hoặc triển khai trên dữ liệu giao dịch thật. Bước tiếp theo phù hợp là kiểm chứng nhu cầu và thử nghiệm trên dữ liệu công khai hoặc dữ liệu giả lập.
 
@@ -517,7 +517,7 @@ Xây dựng một prototype offline gồm Rule + ML + bảng xếp hạng cảnh
 
 **Nếu Not Yet — cần kiểm chứng gì trước:**
 
-- Xác minh nhu cầu và quy trình xử lý cảnh báo qua phỏng vấn người có kinh nghiệm phù hợp.
+- Mở rộng kiểm chứng nhu cầu và quy trình xử lý với thêm người có kinh nghiệm phù hợp.
 - Kiểm tra dataset, nhãn gian lận, mức mất cân bằng lớp và khả năng xây dựng đặc trưng.
 - Đo hiệu quả rule-based baseline trước khi quyết định sử dụng ML.
 - Thử nghiệm tốc độ xử lý và khả năng fallback.
@@ -536,8 +536,6 @@ Nếu chưa có dữ liệu đủ chất lượng để đánh giá, nhóm tạm
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
-
-- **Hạn chế về kiểm chứng:** Nhóm chưa có phỏng vấn trực tiếp với Fraud Analyst thực tế, vì vậy các khó khăn và nhu cầu được xác định hiện vẫn cần xác minh.
 - **Hạn chế về số liệu:** Khối lượng 500 cảnh báo/ngày, thời gian 5 phút/cảnh báo và phân bổ thời gian từng bước là giả định ban đầu. Mục tiêu ≤10 giây là chỉ tiêu kỹ thuật chưa được đo.
 - **Hạn chế về dữ liệu:** Chưa xác nhận dataset có đủ thông tin lịch sử và nhãn để mô phỏng đầy đủ quy trình giám sát giao dịch trong môi trường thực tế.
 - **Hạn chế về mô hình:** ML có thể gặp khó khăn với dữ liệu mất cân bằng, thay đổi hành vi gian lận và các trường hợp chưa xuất hiện trong dữ liệu huấn luyện.
