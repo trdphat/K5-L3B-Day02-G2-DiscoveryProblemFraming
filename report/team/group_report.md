@@ -549,4 +549,3 @@ Nếu chưa có dữ liệu đủ chất lượng để đánh giá, nhóm tạm
 1. Basel Committee on Banking Supervision (BCBS). Anti-money laundering and counter-terrorist financing — Basel Framework. https://www.bis.org/committees/bcbs/basel-consolidated-guidelines/module/afs/10
 2. Wolfsberg Group (2024). Effective Monitoring for Suspicious Activity — Part I. https://wolfsberg-group.org/resources/general/168/
 3. Wolfsberg Group. Effective Monitoring for Suspicious Activity — Part II. https://wolfsberg-group.org/resources/195/202
-
