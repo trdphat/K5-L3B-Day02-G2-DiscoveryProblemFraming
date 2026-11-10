@@ -167,8 +167,6 @@ Nhóm xác định hai khía cạnh cần tập trung là việc lựa chọn th
 
 Khi phải xử lý nhiều cảnh báo giao dịch cùng lúc, Fraud Analyst cần xác định những giao dịch có mức độ rủi ro cao và có đủ thông tin để ưu tiên kiểm tra, nhằm giảm thời gian rà soát và hạn chế xử lý chậm các trường hợp đáng ngờ.
 
-**Giới hạn kiểm chứng:** Các tình huống trên chưa phải kết quả phỏng vấn thực tế. Nhóm cần xác minh mức độ phổ biến của vấn đề, thời gian xử lý và hiệu quả của các cách sàng lọc hiện tại.
-
 ### 3.3. Research giải pháp đã có
 
 Nhóm tìm hiểu các tài liệu về giám sát giao dịch bất thường nhằm xác định những phương pháp đang được sử dụng và lựa chọn hướng triển khai phù hợp cho bài toán.
