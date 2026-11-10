@@ -10,10 +10,10 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | Trương Đức Phát | 2A202603757 | Điều phối nhóm, hội tụ vấn đề, phụ trách research | TruongDucPhat |
-| 2 | Đào Nguyễn Quang Thành |2A202603754 | Phân tích và xây dựng quy trình Before/After | DaoNguyenQuangThanh |
-| 3 | Hồ An Lộc |2A202603743 | Phụ trách kiểm chứng, Problem Statement và Success Metric |  hoanloc |
-| 4 | Nguyễn Minh Nhân | A2202603723 | Phản biện, phân tích mức can thiệp AI, AI Canvas và đánh giá rủi ro | nguyenminhnhan |
+| 1 | Trương Đức Phát | 2A202603757 | Điều phối nhóm, hội tụ vấn đề, phụ trách research | trdphat |
+| 2 | Đào Nguyễn Quang Thành |2A202603754 | Phân tích và xây dựng quy trình Before/After | ThanhDao11 |
+| 3 | Hồ An Lộc |2A202603743 | Phụ trách kiểm chứng, Problem Statement và Success Metric |  hal2332004 |
+| 4 | Nguyễn Minh Nhân | A2202603723 | Phản biện, phân tích mức can thiệp AI, AI Canvas và đánh giá rủi ro | uscalurn |
 
 ## Phân công theo checkpoint
 
