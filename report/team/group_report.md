@@ -507,7 +507,7 @@ Trong phạm vi ưu tiên cảnh báo, nhóm đánh giá **False Negative** — 
 
 **Lý do:**
 
-Bài toán có hướng giải pháp khả thi về mặt kỹ thuật và có thể xây dựng một prototype để đánh giá. Tuy nhiên, nhóm đã làm rõ đã có tín hiệu ban đầu nhưng chưa đủ để đánh giá mức độ phổ biến, chất lượng dữ liệu và khả năng cải thiện so với rule-based.
+Bài toán có hướng giải pháp khả thi về mặt kỹ thuật và có thể xây dựng một prototype để đánh giá.Tuy nhiên, các tín hiệu ban đầu mới chỉ giúp nhóm nhận diện những khó khăn trong quy trình xử lý cảnh báo, chưa đủ để đánh giá mức độ phổ biến của vấn đề. Đồng thời, chất lượng dữ liệu và hiệu quả của ML so với rule-based vẫn cần được kiểm chứng.
 
 Vì vậy, nhóm chưa nên kết luận ML là giải pháp cần thiết hoặc triển khai trên dữ liệu giao dịch thật. Bước tiếp theo phù hợp là kiểm chứng nhu cầu và thử nghiệm trên dữ liệu công khai hoặc dữ liệu giả lập.
 
